@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande</title>
+    <link rel="icon" type="image/png" href="img/flavicon/immobilier.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-button button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-button button[type="reset"] {
+            background-color: #ccc;
+        }
+        button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulaire de Commande</h1>
+    </header>
+
+    <div class="container">
+        <form>
+            <label for="reference">Référence du bien:</label>
+            <input type="text" id="reference" name="reference" required>
+
+            <label for="prix">Prix:</label>
+            <input type="text" id="prix" name="prix" required>
+
+            <label for="nom">Nom complet du client:</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="numero">Numéro de téléphone:</label>
+            <input type="tel" id="numero" name="numero" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="recommandations">Recommandations:</label>
+            <textarea id="recommandations" name="recommandations" rows="4" required></textarea>
+            <div class="form-button">
+                <button type="submit">Valider</button>
+                <button type="reset">Réinitialiser</button>
+            </div>
+        </form>
+        <a href="index.html"><button class="button">Retour</button></a>
+    </div>
+</body>
+</html>

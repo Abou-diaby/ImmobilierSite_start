@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Accueil</title>
+    <link rel="icon" type="image/png" href="img/flavicon/immobilier.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('Vente-dun-bien-immobilier-en-SCI-familiale.JPG') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .search-bar {
+            text-align: center;
+            padding: 50px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .property {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width: calc(28% - 40px); /*côte à côte */
+            vertical-align: top;
+        }
+
+        .property h2 {
+            font-size: 24px;
+        }
+
+        .property p {
+            font-size: 16px;
+        }
+
+        .property .price {
+            font-size: 20px;
+            color: #ff6600;
+        }
+
+        .property img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        .property video {
+            max-width: 100%;
+            margin-top: 10px;
+            align-items: center;
+        }
+
+        .command-button {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .command-button a {
+            background-color: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav {
+            background-color: #333; 
+            padding: 15px;
+        }
+
+        nav a {
+            color: #fff; 
+            text-decoration: none; 
+            margin-right: 25px; 
+            font-weight: bold; 
+        }
+
+        nav a:hover {
+            color: #ffcc00; 
+        }
+
+        nav .logo {
+            color: #fff; 
+            font-size: 24px; 
+            font-weight: bold; 
+        }
+
+        @media screen and (max-width: 600px) {
+        nav {
+            text-align: center; 
+        }
+
+        nav a {
+            display: block; 
+            margin: 10px 0; 
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logo/immobilier.png" alt="MU"></a>
+            <a href="index.html">Accueil</a>
+            <a href="#">Services</a>
+            <a href="#">À propos</a>
+            <a href="#">Contact</a>
+          </nav>
+        <h1>Bienvenue sur notre site immobilier</h1>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Rechercher un bien immobilier...">
+        <button type="submit">Rechercher</button>
+    </div>
+    <div class="container">
+        <div class="property">
+            <h2>Villa de Luxe</h2>
+            <img src="img/villa de luxe/VB1234.jpeg" alt="Villa de Luxe">
+            <p><strong>Référence du bien:</strong> VL001</p>
+            <p><strong>Nom du propriétaire:</strong> Mr Traoré</p>
+            <p><strong>Superficie:</strong> 500 m²</p>
+            <p><strong>ACD:</strong> OUI</p>
+            <p><strong>Localisation:</strong> Ville: ABIDJAN, Commune: BINGERVILLE</p>
+            <p><strong>Offres:</strong> 4 chambres, piscine, jardin</p>
+            <p class="price"><strong>Prix :</strong> 50,500,000 FCFA</p>
+            <video controls>
+                <source src="villa.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="command-button">
+                <a href="Commande.html">Commander</a>
+            </div>
+            
+        </div>
+
+        <div class="property">
+            <h2>Terrain Nu</h2>
+            <img src="img/TERRAIN NU/TN001.jpeg" alt="Terrain Nu">
+            <p><strong>Référence du bien:</strong> TN001</p>
+            <p><strong>Nom du propriétaire:</strong> Mr John</p>
+            <p><strong>Superficie:</strong> 1000 m²</p>
+            <p><strong>ACD:</strong> NON</p>
+            <p><strong>Localisation:</strong> Ville: ABIDJAN, Commune: GONZAGUE</p>
+            <p><strong>Offres:</strong> Terrain prêt à construire</p>
+            <p class="price"><strong>Prix :</strong> 8,500,000 FCFA</p>
+            <video controls>
+                <source src="villa.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="command-button">
+                <a href="Commande.html">Commander</a>
+            </div>
+           
+        </div>
+
+        <div class="property">
+            <h2>Immeuble</h2>
+            <img src="img/Immeuble/IM001.jpeg" alt="Immeuble de Bureaux">
+            <p><strong>Référence du bien:</strong> IM001</p>
+            <p><strong>Nom du propriétaire:</strong> Mr Robert</p>
+            <p><strong>Superficie:</strong> 2000 m²</p>
+            <p><strong>ACD:</strong> OUI</p>
+            <p><strong>Localisation:</strong> Ville: ABIDJAN, Commune: COCODY</p>
+            <p><strong>Offres:</strong> Espaces de bureau, salle de conférence, parking couvert</p>
+            <p class="price"><strong>Prix :</strong> 300,200,000 FCFA</p>
+            <video controls>
+                <source src="villa.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="command-button">
+                <a href="Commande.html">Commander</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
